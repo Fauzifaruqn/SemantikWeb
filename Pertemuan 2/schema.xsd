@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.example.org/Schema"
+xmlns:tns="http://www.example.org/Schema"
+elementFormDefault="qualified">
+
+
+<complexType name="tipekomoditi">
+    <sequence>
+        <element name="barang" type="tns:tipebarang" minOccurs="1"
+        maxOccurs="3"></element>
+    </sequence>
+</complexType>
+
+<complexType name="tipebarang">
+    <sequence>
+        <element name="nama" type="string"></element>
+        <element name="harga" type="tns:harganya"></element>
+    </sequence>
+    <attribute name="bid" type="ID" use="required"></attribute>
+</complexType>
+
+<element name="globalkategori" type="tns:tipekomoditi"></element>
+
+<simpleType name="harganya">
+    <restriction base="integer">
+        <minInclusive value="1000"></minInclusive>
+        <maxInclusive value="10000"></maxInclusive>
+    </restriction>
+</simpleType>
+
+</schema>
