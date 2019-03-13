@@ -1,0 +1,12 @@
+<rdf:rdf
+    xmlns:rdf ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:wiki ="https://en.wikipedia.org/wiki"
+    xmlns:foaf = "http://xmlns.com/foaf/0.1"
+    xmlns:object1 = "https://id.wikipedia.org/wiki/"
+>
+<rdf:Description rdf:about = "wiki:Donald_Trump">
+    <foaf:name>Donald Trump</foaf:name>
+    <foaf:location rdf:resource="object1:Daftar_Presiden_Amerika_Serikat"></foaf:location>
+</rdf:Description>
+
+</rdf:rdf>
