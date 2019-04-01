@@ -1,0 +1,46 @@
+#filename: nmp55.ttl
+
+@prefix ab:<http://perpustakaan.co.id/buku#>.
+@prefix rdf: <http://www,w3,org/1999/02/22-rdf-suntax-ns#>.
+@prefix rdfss: <http://www,w3,org/2000/01/rdf-schema#>.
+@prefix owl: <http://www,w3,org/2002/07/owl#>.
+
+ab:i007
+    ab:Name "Harry Potter and the deathly hallows";
+    ab:Date "July 21st, 2007";
+    ab:series ab:s001.
+
+ab:i006
+    ab:Name "Harry Potter and the Half-Blood Prince";
+    ab:Date "July 16th, 2005";
+    ab:series ab:s001;
+    ab:PrevPart ab:i007.
+
+ab:i005
+    ab:Name "Harry Potter and the Order of Phoenix";
+    ab:Date "June 23rd, 2003";
+    ab:series ab:s001;
+    ab:PrevPart ab:i006.
+
+ab:s001
+    ab:SeriesName "Harry Potter".
+
+ab:series
+    a owl:TransitiveProperty;
+    rdfs:comment "This book is a part of this series".
+
+ab:PrevPart
+    a rdf:Property;
+    rdfs:comment "This book is the previous part of the other book".
+
+ab:NextPart
+    a rdf:Property;
+    rdfs:comment "This book is the next part of the other book";
+    owl:inverseOf ab:PrevPart.
+
+#Implicit Info
+#one of Harry Potter's series book is Harry Potter and the Order of Phoenix
+#one of Harry Potter's series book is Harry Potter and the Half-Blood Prince
+#one of Harry Potter's series book is Harry Potter and the Deathly Hallow
+#Harry Potter and Half-Blood Prince is the next book of Harry Potter and the Order of Phoenix
+#Harry Potter and the Deathly Hallow is the next book of Harry Potter and the Half-Blood Prince

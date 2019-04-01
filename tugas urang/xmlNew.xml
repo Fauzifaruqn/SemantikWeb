@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:globalkategori
+xmlns:tns="http://www.example.org/skema" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:SchemaLocation="http://www.example.org/skema skema.xsd">
+
+    <tns:barang bid="B1">
+        <tns:nama>barang 1</tns:nama>
+        <tns:harga>3000</tns:harga>
+    </tns:barang>
+
+    <tns:barang bid="B1">
+        <tns:nama>barang 2</tns:nama>
+        <tns:harga>3000</tns:harga>
+    </tns:barang>
+
+    <tns:barang bid="B3">
+        <tns:nama>barang 3</tns:nama>
+        <tns:harga>3000</tns:harga>
+    </tns:barang>
+
+    <tns:barang bid="B4">
+        <tns:nama>barang 4</tns:nama>
+        <tns:harga>3000</tns:harga>
+    </tns:barang>
+
+</tns:globalkategori>

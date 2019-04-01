@@ -1,0 +1,15 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:tif="https://www.asus.com/Phone/"
+    xmlns:foaf="http://xmlns.com/foaf/spec/"
+    xmlns:image="https://cdn2.gsmarena.com/vv/bigpic/"
+    xmlns:maker="https://rog.asus.com/"
+>
+    <rdf:Description rdf:about="tif:ROG-Phone">
+        <foaf:name>ROG Phone</foaf:name>
+        <foaf:image rdf:resource="image:asus-rog-phone.jpg"/>
+        <foaf:maker rdf:resource="maker:about-rog"/>
+        <foaf:status>Pre-Order</foaf:status>
+
+    </rdf:Description>
+</rdf:RDF>

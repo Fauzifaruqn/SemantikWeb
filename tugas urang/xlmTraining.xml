@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE komoditi SYSTEM "type.dtd">
+<komoditi>
+    <barang bid="B1" jenis="sayur">
+        <nama>barang 1</nama>
+        <harga>3000</harga>
+    </barang>
+    <barang bid="B2" jenis="buah">
+        <nama>barang 2</nama>
+        <harga>3000</harga>
+    </barang>
+</komoditi>

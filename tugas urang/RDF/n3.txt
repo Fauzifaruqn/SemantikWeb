@@ -1,0 +1,15 @@
+@prefix tif:<https://www.asus.com/Phone/>
+@prefix foaf:<http://xmlns.com/foaf/spec/>
+@prefix image:<https://cdn2.gsmarena.com/vv/bigpic/>
+@prefix maker:<https://rog.asus.com/>
+
+<https://www.asus.com/Phone/ROG-Phone>
+<http://xmlns.com/foaf/spec/image>
+<https://cdn2.gsmarena.com/vv/bigpic/asus-rog-phone.jpg>
+<http://xmlns.com/foaf/spec/maker>
+<https://rog.asus.com/about-rog">
+
+tif:ROG-Phone foaf:name "ROG Phone"
+tif:ROG-Phone foaf:image image:asus-rog-phone
+tif:ROG-Phone foaf:maker maker:about-rog
+tif:ROG-Phone foaf:status "Pre-Order"

@@ -1,0 +1,6 @@
+<!ELEMENT komoditi (barang+)>
+<!ELEMENT barang (nama, harga)>
+<!ELEMENT nama (#PCDATA)>
+<!ELEMENT harga (#PCDATA)>
+<!ATTLIST barang bid ID #REQUIRED>
+<!ATTLIST barang jenis (sayur|buah|daging) "sayur">
